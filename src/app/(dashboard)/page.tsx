@@ -17,7 +17,7 @@ const Home = () => {
               <Building2 className="h-8 w-8 text-primary" />
               <span className="ml-2 text-xl font-semibold">VendorHub</span>
             </div>
-            <UserButton afterSignOutUrl="/" />
+            <UserButton afterSignOutUrl="/sign-in" />
           </div>
         </div>
       </nav>
