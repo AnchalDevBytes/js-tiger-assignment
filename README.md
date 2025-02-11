@@ -2,6 +2,9 @@
 
 A fullstack vendor management system built with Next.js 14, TypeScript, postgresql and Tailwind CSS.
 
+![HomePage](./public/Home.png)
+![HomePage](./public/addVendor.png)
+
 ## Features
 
 - Secure authentication with Clerk

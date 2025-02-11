@@ -19,6 +19,7 @@ import { toast } from "react-toastify";
 import axios, { AxiosResponse } from "axios";
 import { ApiInterface } from "@/Interfaces/ApiInterface";
 import { VendorInterface } from "@/Interfaces/VendorInterface";
+import Spinner from "@/components/Spinner";
 
 const vendorSchema = z.object({
   vendorName: z.string().min(1, "Vendor name is required"),
@@ -90,8 +91,11 @@ const EditVendor = ({ params }: { params: { id: string } }) => {
 
   if (initialLoading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        Loading...
+      <div className="h-[500px] flex items-center justify-center flex-col gap-2">
+        <Spinner />
+        <span className="text-2xl animate-pulse text-yellow-600 tracking-widest">
+          loading...
+        </span>
       </div>
     );
   }
